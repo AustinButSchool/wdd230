@@ -24,11 +24,17 @@
 </head>
 
 <body>
+
     <header>
         <img src="images/photo.png">
         <h1>Austin Jones</h1>
+        <div class="Menu"> <a id="clickMe" class="icon" onclick="myFunction()">≡
+
+            </a></div>
+
     </header>
-    <nav>
+
+    <nav id="navBar">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
@@ -55,6 +61,12 @@
             <p>Weather Data: </p>
             <p>Temprature Data: </p>
         </section>
+        <section class="card">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3304.3674295465903!2d-84.0721582!3d34.0857266!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706477170840!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
     <footer>
         <p>©<span id="year"></span> Austin Jones United States</p>
@@ -62,6 +74,7 @@
     </footer>
 
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
 
 </body>
 
