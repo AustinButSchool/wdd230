@@ -17,6 +17,10 @@ body {
 
 }
 
+h1 {
+    text-shadow: rgb(101, 178, 217) 3px 3px;
+}
+
 .dark {
     position: absolute;
     right: 0px;
