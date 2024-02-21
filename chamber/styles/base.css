@@ -12,14 +12,33 @@ body {
     font-size: large;
     text-align: center;
 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+
 }
 
+.dark {
+    position: absolute;
+    right: 0px;
+    top: 81px;
+    background-color: rgb(90, 148, 203);
+    padding: 10px;
+    width: 5%;
+    border-radius: 5px;
 
+}
+
+.dark p {
+    transition: filter 0.3s ease-in-out;
+
+}
 
 nav {
     background-color: rgb(101, 178, 217);
     align-items: center;
     display: flex;
+    transition: background-color 0.3s ease-in-out;
+
 }
 
 
@@ -30,7 +49,6 @@ nav ul {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
 
 }
 
@@ -62,6 +80,7 @@ nav li:nth-child(6) {
 nav a:hover {
     color: rgb(161, 224, 255);
 
+
 }
 
 
@@ -75,7 +94,8 @@ img {
     justify-content: center;
     align-content: center;
     margin: auto;
-
+    transition: filter 0.3s ease-in-out;
+    z-index: -1;
 }
 
 .overlapImage {
@@ -104,6 +124,8 @@ img {
     margin: auto;
     border-radius: 20px;
     box-shadow: #d1d1d1 5px 5px 5px;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
 }
 
 .overlapImage a:hover {
@@ -120,6 +142,7 @@ img {
     width: 95%;
     justify-self: center;
 
+
 }
 
 
@@ -130,6 +153,7 @@ section div {
     background-color: rgb(243, 180, 126);
     border-radius: 10px;
     justify-self: center;
+    transition: background-color 0.3s ease-in-out;
 
 }
 
@@ -221,4 +245,68 @@ nav div {
     nav div {
         display: none;
     }
+}
+
+
+.dark-mode {
+    background-color: rgb(120, 81, 47);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+
+.dark-mode img {
+    /*filter: sepia(1%) saturate(300%) brightness(70%) hue-rotate(180deg);*/
+    filter: saturate(90%) brightness(60%);
+
+    transition: filter 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.dark-mode nav,
+.dark-mode div,
+.dark-mode footer,
+.dark-mode section a {
+    z-index: 1;
+}
+
+.dark-mode nav,
+.dark-mode footer,
+.dark-mode .overlapImage a {
+    background-color: rgb(90, 148, 203);
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.dark-mode .overlapImage a {
+    box-shadow: rgb(157, 110, 69) 5px 5px 5px;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+
+}
+
+.dark-mode section div {
+    transition: background-color 0.3s ease-in-out;
+
+    background-color: rgb(157, 110, 69);
+}
+
+.dark-mode hr {
+
+    border: 1px solid rgb(120, 81, 47);
+    transition: border 0.3s ease-in-out;
+}
+
+
+.dark-mode .dark {
+    background-color: rgb(101, 178, 217);
+
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.dark-mode .dark p {
+    filter: saturate(00%) invert(100%);
+    transition: filter 0.3s ease-in-out;
+
 }
