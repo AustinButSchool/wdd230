@@ -43,8 +43,16 @@
 
     <h1>Suwanee Chamber of Commerse</h1>
 
+    <picture>
+        <source srcset="images/heavy.jpeg" alt="Atlanta Georgia Temple" media="(min-width: 800px)">
+        <source srcset="images/favicon-peach.ico" alt="Atlanta Georgia Temple" media="(min-width: 600px)">
+        <source srcset="images/suwanee.webp" alt="Atlanta Georgia Temple" media="(min-width: 400px)">
+        <img src="images/heavy.jpeg" alt="Huge">
+
+    </picture>
+
     <section class="overlapImage">
-        <img src="images/suwanee.jpeg">
+        <img src="images/suwanee.webp">
         <a>Join the Chamber</a>
     </section>
     <section class="members">
@@ -73,16 +81,20 @@
     <section class="events">
         <div>
             <h2>Events</h2>
+            <hr>
+
             <h3>Events</h3>
 
-            <hr>
 
         </div>
         <div>
             <h2>Weather</h2>
-            <h3>Weather</h3>
-
             <hr>
+            <h3>Wind Chill: </h3>
+            <input type="text" id="temp" placeholder="Temperature <= 50ºF">
+            <input type="text" id="wind" placeholder="Wind Speed > 3.0 MPH">
+            <button type="button" type="submit" id="calculate" onclick="windChill()">Calculate</button>
+            <p id="print">Wind Chill</p>
 
         </div>
     </section>
@@ -97,6 +109,7 @@
 <script src="scripts/getdates.js"></script>
 <script src="scripts/menu.js"></script>
 <script src="scripts/darkmode.js"></script>
+<script src="scripts/windchill.js"></script>
 
 
 </html>

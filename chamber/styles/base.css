@@ -161,9 +161,12 @@ section div {
 
 }
 
-.events h3 {
-    float: right;
-}
+
+
+
+.events h3 {}
+
+.events input {}
 
 .events {
     margin-top: 2.5%;
@@ -171,6 +174,8 @@ section div {
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     width: 95%;
+    display: flex;
+
 }
 
 hr {
