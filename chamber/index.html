@@ -21,85 +21,87 @@
 </head>
 
 <body>
-    <nav id="navBar">
-        <ul>
-            <li><a href="">Suwanee</a>
-            <li><a href="">Home</a></li>
-            <li><a href="">Discover</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
+    <header>
+        <nav id="navBar">
+            <ul>
+                <li><a href="">Suwanee</a>
+                <li><a href="">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
 
-            </li>
-        </ul>
-        <div class="Menu"><a id="clickMe" class="icon" onclick="myFunction()">≡
+                </li>
+            </ul>
+            <div class="Menu"><a id="clickMe" class="icon" onclick="myFunction()">≡
 
-            </a></div>
-    </nav>
-    <a id="darkClick" onclick="darkMode()">
-        <div class="dark">
-            <p>🌑</p>
-        </div>
-    </a>
+                </a></div>
+        </nav>
+        <a id="darkClick" onclick="darkMode()">
+            <div class="dark">
+                <p>🌑</p>
+            </div>
+        </a>
+    </header>
+    <main>
+        <h1>Suwanee Chamber of Commerse</h1>
 
-    <h1>Suwanee Chamber of Commerse</h1>
+        <picture>
+            <source srcset="images/heavy.jpeg" alt="Atlanta Georgia Temple" media="(min-width: 800px)">
+            <source srcset="images/favicon-peach.ico" alt="Atlanta Georgia Temple" media="(min-width: 600px)">
+            <source srcset="images/suwanee.webp" alt="Atlanta Georgia Temple" media="(min-width: 400px)">
+            <img src="images/heavy.jpeg" alt="Huge">
 
-    <picture>
-        <source srcset="images/heavy.jpeg" alt="Atlanta Georgia Temple" media="(min-width: 800px)">
-        <source srcset="images/favicon-peach.ico" alt="Atlanta Georgia Temple" media="(min-width: 600px)">
-        <source srcset="images/suwanee.webp" alt="Atlanta Georgia Temple" media="(min-width: 400px)">
-        <img src="images/heavy.jpeg" alt="Huge">
+        </picture>
 
-    </picture>
+        <section class="overlapImage">
+            <img src="images/suwanee.webp">
+            <a>Join the Chamber</a>
+        </section>
+        <section class="members">
+            <div>
+                <h2>🛻 Temp Text Trucker.</h2>
+                <p>The only one to do YOUR trucl !</p>
+                <a>Contect Number: at least 30</a>
+                <br>
+                <a>Contect Email: oldmen@atruck.com</a>
+            </div>
+            <div>
+                <h2>🛻 Temp Text Trucker.</h2>
+                <p>The only one to do YOUR trucl !</p>
+                <a>Contect Number: at least 30</a>
+                <br>
+                <a>Contect Email: oldmen@atruck.com</a>
+            </div>
+            <div>
+                <h2>🛻 Temp Text Trucker.</h2>
+                <p>The only one to do YOUR trucl !</p>
+                <a>Contect Number: at least 30</a>
+                <br>
+                <a>Contect Email: oldmen@atruck.com</a>
+            </div>
+        </section>
+        <section class="events">
+            <div>
+                <h2>Events</h2>
+                <hr>
 
-    <section class="overlapImage">
-        <img src="images/suwanee.webp">
-        <a>Join the Chamber</a>
-    </section>
-    <section class="members">
-        <div>
-            <h2>🛻 Temp Text Trucker.</h2>
-            <p>The only one to do YOUR trucl !</p>
-            <a>Contect Number: at least 30</a>
-            <br>
-            <a>Contect Email: oldmen@atruck.com</a>
-        </div>
-        <div>
-            <h2>🛻 Temp Text Trucker.</h2>
-            <p>The only one to do YOUR trucl !</p>
-            <a>Contect Number: at least 30</a>
-            <br>
-            <a>Contect Email: oldmen@atruck.com</a>
-        </div>
-        <div>
-            <h2>🛻 Temp Text Trucker.</h2>
-            <p>The only one to do YOUR trucl !</p>
-            <a>Contect Number: at least 30</a>
-            <br>
-            <a>Contect Email: oldmen@atruck.com</a>
-        </div>
-    </section>
-    <section class="events">
-        <div>
-            <h2>Events</h2>
-            <hr>
-
-            <h3>Events</h3>
-
-
-        </div>
-        <div>
-            <h2>Weather</h2>
-            <hr>
-            <h3>Wind Chill: </h3>
-            <input type="text" id="temp" placeholder="Temperature <= 50ºF">
-            <input type="text" id="wind" placeholder="Wind Speed > 3.0 MPH">
-            <button type="button" type="submit" id="calculate" onclick="windChill()">Calculate</button>
-            <p id="print">Wind Chill</p>
-
-        </div>
-    </section>
+                <h3>Events</h3>
 
 
+            </div>
+            <div>
+                <h2>Weather</h2>
+                <hr>
+                <h3>Wind Chill: </h3>
+                <input type="text" id="temp" placeholder="Temperature <= 50ºF">
+                <input type="text" id="wind" placeholder="Wind Speed > 3.0 MPH">
+                <button type="button" type="submit" id="calculate" onclick="windChill()">Calculate</button>
+                <p id="print">Wind Chill</p>
+
+            </div>
+        </section>
+
+    </main>
 </body>
 <footer>
     <p>©<span id="year"></span> Austin Jones United States</p>
