@@ -2,10 +2,8 @@ body {
     padding: 0;
     display: grid;
     margin: auto;
-    justify-content: center;
     grid-template-rows: auto auto auto;
     grid-template-columns: 100%;
-    align-content: center;
     background-color: peachpuff;
     color: white;
     font-family: 'Lunasima', 'Agdasima', serif;
@@ -16,6 +14,7 @@ body {
 
 
 }
+
 
 h1 {
     text-shadow: rgb(101, 178, 217) 3px 3px;
@@ -99,7 +98,6 @@ img {
     align-content: center;
     margin: auto;
     transition: filter 0.3s ease-in-out;
-    z-index: -1;
 }
 
 .overlapImage {
@@ -115,6 +113,8 @@ img {
 .overlapImage img {
     grid-column: 1/4;
     grid-row: 1/4;
+    z-index: -1;
+
 }
 
 .overlapImage a {
@@ -143,8 +143,10 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
     width: 95%;
-    justify-self: center;
+    justify-content: center;
 
 
 }
@@ -315,5 +317,71 @@ nav div {
 .dark-mode .dark p {
     filter: saturate(00%) invert(100%);
     transition: filter 0.3s ease-in-out;
+
+}
+
+.gridDisplay {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gridDisplay section,
+.gridDisplay div {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.gridDisplay section,
+.stretch {
+    height: 100%;
+}
+
+.roundedImage {
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0;
+
+}
+
+.roundedImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+    filter: grayscale(100%);
+
+
+
+}
+
+.roundedImage:hover {
+    filter: drop-shadow(5px 5px 0px peachpuff);
+
+}
+
+.roundedImage img:hover {
+    filter: grayscale(0%);
+
+}
+
+.group {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: solid peachpuff 3px;
+}
+
+.stretch>h2:first-child {
+    text-shadow: rgb(101, 178, 217) 3px 3px;
 
 }
