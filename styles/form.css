@@ -1,0 +1,36 @@
+:root .form {
+    padding: 10px;
+    border: 1px solid#18a4f7;
+    margin: 10px;
+}
+
+:root .form input {
+    padding: 10px;
+    border: 1px solid #18a4f7;
+    margin: 10px;
+}
+
+:root #r {
+    width: 180px;
+    margin-bottom: 0;
+
+}
+
+#rangevalue {
+    font-size: 2rem;
+    color: #18a4f7;
+
+}
+
+#rangevalues {
+    display: flex;
+    margin: 0 0 0 25px;
+    width: 190px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+    text-align: center;
+}
