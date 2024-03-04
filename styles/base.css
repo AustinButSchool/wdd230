@@ -1,5 +1,11 @@
-body {
+:root {
     padding: 0;
+    background-color: #1b1b1b;
+    font-family: 'Lunasima', 'Agdasima', serif;
+
+}
+
+body {
     text-align: center;
     display: grid;
     margin: auto;
@@ -7,9 +13,7 @@ body {
     grid-template-rows: auto auto auto;
     grid-template-columns: 100%;
     align-content: center;
-    background-color: #1b1b1b;
     color: #d1d1d1;
-    font-family: 'Lunasima', 'Agdasima', serif;
 
 }
 

@@ -1,16 +1,16 @@
-:root .form {
+.form {
     padding: 10px;
     border: 1px solid#18a4f7;
     margin: 10px;
 }
 
-:root .form input {
+.form input {
     padding: 10px;
     border: 1px solid #18a4f7;
     margin: 10px;
 }
 
-:root #r {
+#r {
     width: 180px;
     margin-bottom: 0;
 
