@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Austin Chamber Page">
+    <meta name="author" content="Austin Jones">
+    <meta property="og:title" content="Chamber Website">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://austinbutschool.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="/images/suwanee.jpeg">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Agdasima|Lunasima">
+
+    <title>Suwanee Site Chamber of Commerce</title>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/formdate.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navBar">
+            <ul>
+                <li><a href="">Suwanee</a>
+                <li><a href="">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+
+                </li>
+            </ul>
+            <div class="Menu"><a id="clickMe" class="icon" onclick="myFunction()">≡
+
+                </a></div>
+        </nav>
+        <a id="darkClick" onclick="darkMode()">
+            <div class="dark">
+                <p>🌑</p>
+            </div>
+        </a>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get">
+
+            <fieldset>
+                <legend>General Questions</legend>
+                <div>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div>
+                    <label for="position">Title/Position:</label>
+                    <input type="text" id="position" name="position" pattern="[A-Z -]{7,}" required>
+                </div>
+                <div>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                </div>
+                <div>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div>
+
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div>
+
+                    <label for="description">Company Description:</label>
+                    <textarea type="text" id="description" name="description" required></textarea>
+                </div>
+                <div> <label for="membershipLevel">Membership Level:</label>
+                    <select id="membershipLevel" name="membershipLevel" required>
+                        <option value="NP">Non Profit Membership</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </div>
+
+                <input type="hidden" id="date" name="date" value="">
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Meambership Type</legend>
+
+                <div>
+                    <p>NP Membership (Non-Profit):<br>
+
+                        Description: Designed exclusively for non-profit organizations committed to making a positive
+                        impact without the burden of membership fees.<br>
+                        Benefits:
+                        Inclusion in the organization's directory of non-profits.<br>
+                        Access to educational resources and workshops aimed at enhancing organizational efficiency.<br>
+                        Networking opportunities within the non-profit sector.</p>
+                </div>
+                <div>
+                    <p>Bronze Membership:<br>
+
+                        Description: An entry-level membership offering essential benefits for organizations seeking a
+                        cost-effective way to engage with the community.
+                        Benefits:<br>
+                        Basic event discounts for select community gatherings.<br>
+                        Listing in the member directory.<br>
+                        Occasional spotlight positions on the website.</p>
+                </div>
+                <div>
+                    <p>Silver Membership:<br>
+
+                        Description: A mid-tier membership with enhanced benefits, catering to organizations seeking a
+                        more substantial presence and networking opportunities.
+                        Benefits:<br>
+                        Increased event discounts for a wider range of activities.<br>
+                        Priority advertising with periodic spotlight positions on the home page.<br>
+                        Access to exclusive training sessions and industry-specific workshops.<br>
+                        Recognition in the organization's newsletters and promotional materials.</p>
+                </div>
+                <div>
+                    <p>Gold Membership:<br>
+
+                        Description: The premium membership level offering the highest level of benefits and visibility
+                        for organizations committed to maximizing their impact and influence.
+                        Benefits:<br>
+                        Significant event discounts for all sponsored activities.<br>
+                        Premier advertising with frequent spotlight positions on the home page.<br>
+                        Exclusive invitations to special events, conferences, and networking opportunities.<br>
+                        VIP access to training programs and workshops.<br>
+                        Featured content and interviews showcasing the organization's achievements.<br>
+                        Priority consideration for collaborative initiatives and partnerships.<br>
+                        Recognition as a top-tier supporter in all organizational communications.</p>
+                </div>
+
+            </fieldset>
+            <div class="buttonspan">
+                <label for="submit"></label>
+                <button type="submit" id="submit">Sumbit Form</button>
+            </div>
+        </form>
+
+    </main>
+</body>
+<footer>
+    <p>©<span id="year"></span> Austin Jones United States</p>
+    <p>Last Modified: <span id="modified"></span></p>
+</footer>
+
+
+
+
+</html>
