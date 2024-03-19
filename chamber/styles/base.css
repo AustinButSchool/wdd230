@@ -438,14 +438,14 @@ form .buttonspan button {
 
 }
 
-#cards {
+.cards {
     margin: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
 }
 
-#cards section {
+.cards section {
     background-color: rgb(255, 213, 177);
     box-shadow: 2px 2px 2px rgb(243, 180, 126);
     margin: 10px;
@@ -454,13 +454,39 @@ form .buttonspan button {
     padding: 10px;
 }
 
-#cards img {
+.cards img {
     width: auto;
     max-width: 100%;
     max-height: 40%;
     height: auto;
 }
 
-#cards p {
+.cards p {
     color: rgb(120, 81, 47)
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+    /* smaller viewports only */
+}
+
+
+.list section:nth-child(even) {
+    background-color: rgb(255, 199, 150);
 }
