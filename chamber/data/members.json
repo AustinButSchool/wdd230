@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "ABC Corporation",
+            "address": "123 Main Street, Cityville, State, ZIP",
+            "phone": "123-456-7890",
+            "website": "http://www.abccorp.com",
+            "image": "images/abc_corp_logo.png",
+            "membership_level": "Gold",
+            "description": "ABC Corporation is a leading provider of innovative solutions in the tech industry."
+        },
+        {
+            "name": "XYZ Enterprises",
+            "address": "456 Elm Street, Townsville, State, ZIP",
+            "phone": "987-654-3210",
+            "website": "http://www.xyzenterprises.com",
+            "image": "images/xyz_enterprises_logo.png",
+            "membership_level": "Silver",
+            "description": "XYZ Enterprises specializes in providing top-notch consultancy services for businesses worldwide."
+        },
+        {
+            "name": "PQR Ltd.",
+            "address": "789 Oak Street, Villagetown, State, ZIP",
+            "phone": "567-890-1234",
+            "website": "http://www.pqrltd.com",
+            "image": "images/pqr_ltd_logo.png",
+            "membership_level": "Bronze",
+            "description": "PQR Ltd. is a trusted supplier of quality products in the manufacturing sector."
+        },
+        {
+            "name": "LMN Technologies",
+            "address": "321 Pine Street, Hamletville, State, ZIP",
+            "phone": "234-567-8901",
+            "website": "http://www.lmntech.com",
+            "image": "images/lmn_tech_logo.png",
+            "membership_level": "Platinum",
+            "description": "LMN Technologies pioneers breakthroughs in the field of artificial intelligence and robotics."
+        },
+        {
+            "name": "EFG Innovations",
+            "address": "654 Cedar Street, Suburbia, State, ZIP",
+            "phone": "789-012-3456",
+            "website": "http://www.efginnovations.com",
+            "image": "images/efg_innovations_logo.png",
+            "membership_level": "Gold",
+            "description": "EFG Innovations is committed to revolutionizing the healthcare industry through cutting-edge technology."
+        },
+        {
+            "name": "RST Solutions",
+            "address": "987 Maple Street, Countryside, State, ZIP",
+            "phone": "012-345-6789",
+            "website": "http://www.rstsolutions.com",
+            "image": "images/rst_solutions_logo.png",
+            "membership_level": "Silver",
+            "description": "RST Solutions offers comprehensive software solutions tailored to meet the needs of modern businesses."
+        },
+        {
+            "name": "UVW Group",
+            "address": "234 Walnut Street, Seaside, State, ZIP",
+            "phone": "345-678-9012",
+            "website": "http://www.uvwgroup.com",
+            "image": "images/uvw_group_logo.png",
+            "membership_level": "Bronze",
+            "description": "UVW Group is a leading provider of financial services, helping clients achieve their goals with expertise and integrity."
+        }
+    ]
+}

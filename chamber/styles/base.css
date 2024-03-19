@@ -437,3 +437,30 @@ form .buttonspan button {
     background-color: rgb(101, 178, 217);
 
 }
+
+#cards {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+}
+
+#cards section {
+    background-color: rgb(255, 213, 177);
+    box-shadow: 2px 2px 2px rgb(243, 180, 126);
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#cards img {
+    width: auto;
+    max-width: 100%;
+    max-height: 40%;
+    height: auto;
+}
+
+#cards p {
+    color: rgb(120, 81, 47)
+}
