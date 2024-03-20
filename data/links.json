@@ -1,0 +1,28 @@
+{
+    "activities": [
+        {
+            "name": "Lesson 2",
+            "website": "https://austinbutschool.github.io/wdd230/lesson02/design-principles.html"
+        },
+        {
+            "name": "Lesson 3",
+            "website": "https://austinbutschool.github.io/wdd230/lesson03/chamber-site-plan.html"
+        },
+        {
+            "name": "Lesson 5",
+            "website": "https://austinbutschool.github.io/wdd230/lesson05/bom.html"
+        },
+        {
+            "name": "Lesson 6",
+            "website": "https://austinbutschool.github.io/wdd230/lesson06/index.html"
+        },
+        {
+            "name": "Lesson 9",
+            "website": "https://austinbutschool.github.io/wdd230/lesson09/prophets.html"
+        },
+        {
+            "name": "Lesson 10",
+            "website": "https://austinbutschool.github.io/wdd230/lesson10/weather.html"
+        }
+    ]
+}
