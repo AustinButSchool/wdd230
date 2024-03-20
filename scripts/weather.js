@@ -21,6 +21,7 @@ const displayComp = (data) => {
 
     weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${icon}@2x.png`);
     weatherIcon.setAttribute('height', `50px`);
+    weatherIcon.setAttribute('alt', capatalDesc);
 
     currentTemp.textContent = data.main.temp;
 
