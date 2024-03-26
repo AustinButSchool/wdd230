@@ -1,0 +1,54 @@
+{
+    "gold": [
+        {
+            "name": "JOHN",
+            "desc": "ILL EAT YOUR APPLES",
+            "num": "Ill have yours :smirk",
+            "email": "electronic@mail.com"
+        },
+        {
+            "name": "🛻 Temp Text Trucker.",
+            "desc": "The only one to do YOUR trucl !",
+            "num": "at least 30",
+            "email": "oldmen@atruck.com"
+        },
+        {
+            "name": "Kringston, Devour Of Souls",
+            "desc": "It's pretty explanitory.",
+            "num": "3 left.",
+            "email": "477 Satanaic Blv."
+        },
+        {
+            "name": "Vivien",
+            "desc": "The Coolest.",
+            "num": "Private",
+            "email": "Nice try."
+        },
+        {
+            "name": "IM A THEIF",
+            "desc": "STEAL STEAL PILLAGE LOOT",
+            "num": "100,000,000$",
+            "email": "theif@yourhouse.com"
+        }
+    ],
+    "silver": [
+        {
+            "name": "Austin",
+            "desc": "The Un-Coolest.",
+            "num": "Private",
+            "email": "Nice try."
+        },
+        {
+            "name": "James",
+            "desc": "I love jam.",
+            "num": "111 222 3334",
+            "email": "jamjames@gmail.com"
+        },
+        {
+            "name": "Steven Bridger",
+            "desc": "Why aren't you bridging?",
+            "num": "37",
+            "email": "noIdidnotask@gmail.com"
+        }
+    ]
+}

@@ -187,13 +187,17 @@ hr {
     text-align: left;
 }
 
-.events div:nth-child(1) {
+.eventsTab {
     grid-column: 1/3;
     margin-right: 20px;
 
 }
 
-.events div:nth-child(2) {
+.eventsTab p {
+    margin-left: 20px;
+}
+
+.weatherTab {
     margin-left: 20px;
 
 }
@@ -235,6 +239,16 @@ nav div {
         display: flex;
         margin-left: auto;
         margin-bottom: auto;
+    }
+
+    .events {
+        display: block;
+        grid-column: 1/2;
+
+    }
+
+    .weatherTab {
+        margin: 20px 0 0 0;
     }
 }
 
@@ -489,4 +503,73 @@ form .buttonspan button {
 
 .list section:nth-child(even) {
     background-color: rgb(255, 199, 150);
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.weather div {
+    margin: 5px;
+    width: 95%;
+    box-shadow: 5px 5px rgb(214, 149, 91);
+    background-color: rgb(225, 161, 105);
+    text-align: center;
+
+}
+
+.dark-mode .weather div {
+    background-color: rgb(172, 122, 77);
+    box-shadow: 5px 5px rgb(120, 81, 47);
+
+
+}
+
+.weather img {
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    transition: filter 0.3s ease-in-out;
+}
+
+.bannerMain {
+    background-color: rgb(101, 178, 217);
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    left: 25%;
+    margin: 20px;
+    text-align: left;
+}
+
+
+.bannerClosePosition {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.bannerClose {
+    color: white;
+    font-weight: 9000;
+    font-size: 30px;
+    filter: saturate(00%) invert(100%) brightness(150%);
+
+    transition: filter 0.3s ease-in-out;
+
+}
+
+.bannerClose:hover {
+    color: rgb(90, 148, 203);
+    filter: saturate(100%) invert(100%) brightness(50%) hue-rotate(20deg);
+
 }
