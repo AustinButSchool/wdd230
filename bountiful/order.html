@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Bountiful Foods Portal">
+    <meta name="author" content="Austin Jones">
+    <meta property="og:title" content="Bountiful Foods">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://austinbutschool.github.io/wdd230/">
+    <meta property="og:image" content="">
+    <link rel="icon" type="image/x-icon" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <title>Bountiful Foods</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bountiful Foods</h1>
+    </header>
+
+    <nav id="navBar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Order</a></li>
+            <li><a href="chamber/">About Us</a></li>
+            </li>
+        </ul>
+    </nav>
+    <div class="board">
+
+        <div id="paper" class="long">
+            <form action="confirmation.html" method="get" class="form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+
+                <br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}">
+                <br>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" oninput="checkPasswordMatch()">
+                <div id="formmessage"></div>
+
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"> <!--pattern="[a-zA-Z0-9_.\-]+@byui.edu"-->
+
+                <br>
+                <label for="fruit">Fruits:</label>
+                <select id="fruit" name="fruit" class="fruit">
+                    <option>-</option>
+
+                </select>
+                <br>
+
+                <label for="morefruit">Fruits 2:</label>
+                <select id="morefruit" name="morefruit" class="fruit">
+                    <option>-</option>
+                </select>
+                <br>
+
+                <label for="evenfruit">Fruits 3:</label>
+                <select id="evenfruit" name="evenfruit" class="fruit">
+                    <option>-</option>
+
+                </select>
+                <br>
+
+
+                <input type="submit" value="Place Order">
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+<footer>jhij</footer>
+
+<script src="scripts/paper.js"></script>
+<script src="scripts/fruitList.js"></script>
+
+
+</html>
