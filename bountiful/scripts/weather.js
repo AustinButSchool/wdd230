@@ -19,7 +19,6 @@ const displayComp = (data) => {
     const capatalDesc = desc.charAt(0).toUpperCase() + desc.slice(1);
 
     weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${icon}@2x.png`);
-    weatherIcon.setAttribute('height', `50px`);
     weatherIcon.setAttribute('alt', capatalDesc);
 
     currentTemp.textContent = data.main.temp;
@@ -63,16 +62,16 @@ function ThreeDayElement(data) {
         let img = document.createElement('img');
         let icon = data.list[dayArray[i]].weather[0].icon;
 
-        desc.innerHTML = "Weather:" + "<br>" + data.list[dayArray[i]].weather[0].main + "<br>" + "<br>" + " Description:" + "<br>" + data.list[i].weather[0].description;
+        desc.innerHTML = data.list[i].weather[0].description;
         temp.textContent = data.list[dayArray[i]].main.temp + "°F";
         img.setAttribute('src', `https://openweathermap.org/img/wn/${icon}@2x.png`);
         img.setAttribute('alt', "Photo of " + data.list[dayArray[i]].weather[0].description);
         img.setAttribute('style', "align-self: right");
         day.setAttribute('id', "sticky");
 
+        day.appendChild(dayName);
 
         day.appendChild(img);
-        day.appendChild(dayName);
 
         day.appendChild(desc);
         day.appendChild(temp);

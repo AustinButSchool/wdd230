@@ -27,53 +27,44 @@
 
     <nav id="navBar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="lesson03/chamber-site-plan.html">Order</a></li>
-            <li><a href="chamber/">About Us</a></li>
+            <li><a href="/bountiful/index.html">Home</a></li>
+            <li><a href="/bountiful/order.html">Order</a></li>
+            <li><a href="/bountiful/aboutus.html">About Us</a></li>
             </li>
         </ul>
+        <div class="Menu"><a id="clickMe" class="icon" onclick="myFunction()">≡
+
+            </a></div>
     </nav>
     <div class="board">
 
-        <div id="paper" class="long">
+        <div id="paper" class="long center">
+            <h1>Order Here</h1>
             <form action="confirmation.html" method="get" class="form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
-
-                <br>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}">
-                <br>
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" oninput="checkPasswordMatch()">
-                <div id="formmessage"></div>
-
+                <label for="firstName">Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
                 <br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email"> <!--pattern="[a-zA-Z0-9_.\-]+@byui.edu"-->
-
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
                 <br>
                 <label for="fruit">Fruits:</label>
-                <select id="fruit" name="fruit" class="fruit">
-                    <option>-</option>
-
+                <select id="fruit" name="fruit" class="fruit" required>
                 </select>
                 <br>
-
                 <label for="morefruit">Fruits 2:</label>
-                <select id="morefruit" name="morefruit" class="fruit">
-                    <option>-</option>
+                <select id="morefruit" name="morefruit" class="fruit" required>
                 </select>
                 <br>
-
                 <label for="evenfruit">Fruits 3:</label>
-                <select id="evenfruit" name="evenfruit" class="fruit">
-                    <option>-</option>
-
+                <select id="evenfruit" name="evenfruit" class="fruit" required>
                 </select>
                 <br>
-
+                <label for="specialInstructions">Special Instructions:</label>
+                <input type="text" id="specialInstructions" name="specialInstructions">
+                <br>
 
                 <input type="submit" value="Place Order">
 
@@ -88,5 +79,6 @@
 <script src="scripts/paper.js"></script>
 <script src="scripts/fruitList.js"></script>
 
+<script src="scripts/menu.js"></script>
 
 </html>

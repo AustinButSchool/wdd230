@@ -11,6 +11,8 @@ for (const paper of papers) {
 
     let tack = document.createElement("img");
     tack.setAttribute("src", "images/thumbtack.png");
+    tack.setAttribute("alt", "tack");
+    tack.setAttribute("class", "pin");
     tack.style.filter = "hue-rotate(" + colorShift + "deg)";
     tack.style.transformOrigin = "bottom left";
     tack.style.transform = "rotate(" + tackShift + "deg)";
