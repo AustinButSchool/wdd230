@@ -222,6 +222,18 @@ nav {
     .Menu {
         display: block;
     }
+
+    footer {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+.justify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .poloroid {
