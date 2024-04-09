@@ -148,7 +148,7 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
+    color: rgb(0, 42, 125);
 
 }
 
@@ -156,16 +156,17 @@ nav a:hover {
 
 
 nav li {
-    background-color: rgb(6, 164, 255);
+    background: linear-gradient(to bottom, rgb(6, 164, 255) 50%, rgb(6, 164, 255) 100%);
     width: 100%;
     text-align: center;
-    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, border-radius 0.2s ease-in-out, linear-gradient 0.2s ease-in-out;
 
 
 }
 
 nav li:hover {
-    background-color: lightskyblue;
+    background: linear-gradient(to bottom, rgb(6, 164, 255) 50%, rgb(5, 113, 236) 100%);
+
     transform: translate(0px, 10px);
     border-radius: 10px;
 }
