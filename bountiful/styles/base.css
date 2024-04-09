@@ -96,7 +96,7 @@ p {
 .board {
     margin: 5%;
     border: 20px solid transparent;
-    border-image: url(/bountiful/images/woodbordertest.png) 30 round;
+    border-image: url(images/woodbordertest.png) 30 round;
     background-image: url(https://media.istockphoto.com/id/93273098/photo/close-up-of-rectangular-corkboard-texture.jpg?s=612x612&w=0&k=20&c=zZWDPeiaqT0oN15fpOpfsxHP_RdRQikxtYqYf5dnueM=);
     box-shadow: inset 4px 4px rgba(0, 0, 0, 0.5), 6px 6px 4px rgba(24, 0, 0, 0.5);
     display: grid;
@@ -123,6 +123,8 @@ footer {
     align-items: center;
     margin: auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -165,7 +167,7 @@ nav li {
 }
 
 nav li:hover {
-    background: linear-gradient(to bottom, rgb(6, 164, 255) 50%, rgb(5, 113, 236) 100%);
+    background: linear-gradient(to bottom, rgb(6, 164, 255) 25%, rgb(8, 118, 243) 100%);
 
     transform: translate(0px, 10px);
     border-radius: 10px;
