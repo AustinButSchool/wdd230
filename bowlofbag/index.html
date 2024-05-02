@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Bowl Of Bagels: A Conspiracy Game</h1>
+    <label for="slider">Player Count: </label>
+
+    <input type="range" min="3" max="10" value="3" id="slider">
+
+    <div class="spinner">
+        <div class="choice">Events</div>
+        <div class="choice">Person</div>
+        <div class="choice">Object</div>
+        <div class="choice">Group</div>
+        <div class="choice">Idea<div>Events</div>
+        </div>
+        <div class="minute"></div>
+        <div class="hour"></div>
+        <div class="gradientEffect"></div>
+
+        <div class="button" id="button">⟳</div>
+
+    </div>
+    <h2> Not to sound crazy, but:
+        <span class="first">_____</span> / <span class="middle">_____</span> / <span class="second">_____</span>
+    </h2>
+
+
+    <div class="gridArea">
+        <div class="players">
+        </div>
+        <div>
+            <form class="groupCalc">
+                <input type="submit" id="general">
+
+            </form>
+            <span id="groupAnswer">_____</span>
+        </div>
+        <div>
+            <form class="totalCalc">
+                <input type="submit" id="totalPoints">
+
+            </form>
+            <span id="finalAnswer">_____</span>
+        </div>
+    </div>
+
+</body>
+<script src="scripts/logic.js"></script>
+<link rel="stylesheet" href="styles/base.css">
+
+
+</html>

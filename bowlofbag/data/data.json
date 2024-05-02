@@ -1,0 +1,115 @@
+[
+    {
+        "class": "events",
+        "data": [
+            "that time I pooped",
+            "the Big Bang",
+            "the 2028 Elections",
+            "Pompeii",
+            "the Moon Landing",
+            "the Great Depression",
+            "my depression",
+            "tax day",
+            "invasion of killer hornets",
+            "the fall of the Roman Empire",
+            "the discovery of fire",
+            "the Industrial Revolution",
+            "the Renaissance",
+            "the invention of the internet"
+        ],
+        "middle": {
+            "events": "was a cover up of",
+            "person": "happened because of",
+            "object": "was the inspiration of",
+            "group": "was faked by",
+            "idea": "directly created"
+        }
+    },
+    {
+        "class": "person",
+        "data": [
+            "Brack Obama",
+            "Albert Einstien",
+            "your mom",
+            "George Washington",
+            "my weird uncle",
+            "Uncle Sam",
+            "Bob Ross",
+            "Judas",
+            "Marionette",
+            "that one grocery store clerk",
+            "that vampire",
+            "that hobo",
+            "Elon Musk"
+        ],
+        "middle": {
+            "events": "was involved in",
+            "person": "is a puppet for",
+            "object": "really created",
+            "group": "doesn't exist, and was created by",
+            "idea": "fabricated"
+        }
+    },
+    {
+        "class": "object",
+        "data": [
+            "a bannanana",
+            "a cauldron of hummus",
+            "a cardboard box",
+            "a pencil",
+            "Excalibur",
+            "the wheel",
+            "the light bulb",
+            "the printing press",
+            "the smartphone"
+        ],
+        "middle": {
+            "events": "actually caused",
+            "person": "was made for",
+            "object": "is just a second grade",
+            "group": "is important to",
+            "idea": "actually symbolizes"
+        }
+    },
+    {
+        "class": "group",
+        "data": [
+            "NASA",
+            "McDonalds",
+            "the Illuminati",
+            "the Beatles",
+            "the FBI",
+            "the people who eat tacos",
+            "the people who sniff glue",
+            "the people who can go into staff only doors",
+            "butlers"
+        ],
+        "middle": {
+            "events": "tried to stop",
+            "person": "is actually led by",
+            "object": "wants to ban",
+            "group": "has direct ties to",
+            "idea": "is proof of"
+        }
+    },
+    {
+        "class": "idea",
+        "data": [
+            "communism",
+            "the concept of Santa",
+            "democracy",
+            "the concept of gravity",
+            "friendship",
+            "love",
+            "physics",
+            "the belief that the world is round"
+        ],
+        "middle": {
+            "events": "led to",
+            "person": "has shaped",
+            "object": "secretly is about",
+            "group": "is the philosophy behind",
+            "idea": "actually inspired"
+        }
+    }
+]

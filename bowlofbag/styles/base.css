@@ -1,0 +1,144 @@
+.spinner {
+    background-color: green;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px red;
+}
+
+
+.choice {
+    font-size: 24px;
+    color: black;
+    background-color: blue;
+    transform-origin: top left;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transition: filter .5s ease-in-out, color .5s ease-in-out, box-shadow .5s ease-in-out;
+
+}
+
+.choice:nth-child(1) {
+    transform: rotate(72deg);
+    background-color: red;
+}
+
+.choice:nth-child(2) {
+    transform: rotate(144deg);
+    background-color: orange;
+
+}
+
+.choice:nth-child(3) {
+    transform: rotate(216deg);
+    background-color: yellow;
+
+}
+
+.choice:nth-child(4) {
+    transform: rotate(288deg);
+    background-color: lime;
+
+}
+
+.choice:nth-child(5) {
+    transform: rotate(360deg);
+    background-color: dodgerblue;
+    overflow: hidden;
+
+
+}
+
+.choice:nth-child(5) div {
+    transition: filter .5s ease-in-out, color .5s ease-in-out, box-shadow .5s ease-in-out;
+
+    background-color: red;
+
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    transform: rotate(72deg);
+    transform-origin: top left;
+
+}
+
+
+.minute {
+    top: calc(50% - 5%);
+    left: 50%;
+    background-color: white;
+    position: absolute;
+    width: 45%;
+    height: 10%;
+    transform-origin: center left;
+    transition: transform 5s ease-in-out;
+    border-radius: 0 50% 50% 0;
+
+
+
+}
+
+.hour {
+    top: calc(50% - 5%);
+    left: 50%;
+    background-color: black;
+    position: absolute;
+    width: 35%;
+    height: 10%;
+    transform-origin: center left;
+    transition: transform 7s ease-in-out;
+    border-radius: 0 50% 50% 0;
+
+
+}
+
+
+.button {
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    top: calc(50% - 10%);
+    left: calc(50% - 10%);
+    text-align: center;
+    align-content: center;
+
+
+}
+
+body {
+    /* background-image: url("https://cdn2-optimize.wolfgordon.com/wolf-gord/production/product/swatches/cork-339.jpg?w=1920&h=1920&fm=jpg&auto=compress&fit=crop&dm=1620749829&s=d2f713479c992623b665a3c3d4a02f1a");*/
+    background-size: cover;
+    background-blend-mode: color-burn;
+    color: white;
+    background-color: black;
+}
+
+.refreshButton {
+    border-radius: 100%;
+    font-size: 1em;
+}
+
+.gradientEffect {
+    background-image: radial-gradient(transparent, transparent, red);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.gridArea {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
