@@ -6,6 +6,8 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0px 0px 20px red;
+    margin: auto;
+
 }
 
 
@@ -123,6 +125,8 @@ body {
     background-blend-mode: color-burn;
     color: white;
     background-color: black;
+    text-align: center;
+
 }
 
 .refreshButton {
@@ -141,4 +145,14 @@ body {
 .gridArea {
     display: grid;
     grid-template-columns: 33% 33% 33%;
+}
+
+fieldset {
+    padding: 5%;
+
+
+}
+
+form {
+    line-height: 2.5em;
 }

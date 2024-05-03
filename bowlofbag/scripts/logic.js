@@ -265,6 +265,8 @@ function players(value) {
     let general = document.getElementById("general");
     let totalPoints = document.getElementById("totalPoints");
 
+    currentPlayersCount = value;
+
 
     while (player.length < value) {
 
@@ -275,6 +277,7 @@ function players(value) {
         let containingDiv = document.createElement("div");
         let refreshBut = document.createElement("button");
         let boolRefresh = document.createElement("input");
+        let hrTest = document.createElement("hr");
 
         let playerTextContent = document.createTextNode(" Player " + (player.length + 1) + ": ");
 
@@ -300,6 +303,8 @@ function players(value) {
         playerText.appendChild(lastSpan);
 
         containingDiv.appendChild(playerText);
+        containingDiv.appendChild(hrTest);
+
 
         players.appendChild(containingDiv);
 
@@ -316,11 +321,16 @@ function players(value) {
         let qBreak = document.createElement("br");
 
 
+
+
+
         vote1.textContent = "KNEW IT";
         vote2.textContent = "I can see it";
         vote3.textContent = "I need more facts";
         vote4.textContent = "I don’t think so";
         vote5.textContent = "NO SHOT";
+
+
 
         vote1.setAttribute("value", "2");
         vote2.setAttribute("value", "1");
@@ -341,13 +351,19 @@ function players(value) {
         playerGeneralVote.appendChild(vote5);
 
 
+
+
         calcForm.insertBefore(playerGeneralVoteLabel.cloneNode(true), general);
         calcForm.insertBefore(playerGeneralVote.cloneNode(true), general);
-        calcForm.insertBefore(qBreak, general);
+        calcForm.insertBefore(qBreak.cloneNode(true), general);
+
 
 
         totalCalc.insertBefore(playerGeneralVoteLabel, totalPoints);
         totalCalc.insertBefore(playerGeneralVote, totalPoints);
+        totalCalc.insertBefore(qBreak.cloneNode(true), totalPoints);
+
+
 
 
     }
@@ -361,98 +377,27 @@ function players(value) {
 
         let calcFormLastLabel = calcForm.querySelector("label:last-of-type");
         let calcFormLastSelect = calcForm.querySelector("select:last-of-type");
+        let calcFormLastBreak = calcForm.querySelector("br:last-of-type");
         let lastLabel = totalCalc.querySelector("label:last-of-type");
         let lastSelect = totalCalc.querySelector("select:last-of-type");
+        let lastBreak = totalCalc.querySelector("br:last-of-type");
 
         calcFormLastLabel.remove();
         calcFormLastSelect.remove();
         lastLabel.remove();
         lastSelect.remove();
+        calcFormLastBreak.remove();
+        lastBreak.remove();
+
+        playerScore.pop();
+        playerAdd.pop();
 
         player = document.querySelectorAll(".player");
     }
 
-    document.querySelector('.groupCalc').addEventListener('submit', function (event) {
-        event.preventDefault();
-        let selectInputs = this.querySelectorAll('select');
-        let totalPoints = 0;
-        let totalTimes = 0;
-        let finalAnswer = "";
-
-        selectInputs.forEach(function (selectInput) {
-            let selectedValue = parseInt(selectInput.value);
-            totalPoints += selectedValue;
-            totalTimes += 1;
-        });
-
-        totalPoints = totalPoints / totalTimes;
-        totalPoints = Math.round(totalPoints);
-
-        switch (totalPoints) {
-            case -2:
-                finalAnswer = "NO SHOT";
-                break;
-            case -1:
-                finalAnswer = "I don’t think so";
-                break;
-            case 0:
-                finalAnswer = "I need more facts";
-                break;
-            case 1:
-                finalAnswer = "I can see it";
-                break;
-            case 2:
-                finalAnswer = "KNEW IT";
-                break;
-            default:
-                finalAnswer = "";
-        }
-
-        let groupAnswer = document.getElementById("groupAnswer");
-        groupAnswer.textContent = finalAnswer;
-
-    });
-
-
-    document.querySelector('.totalCalc').addEventListener('submit', function (event) {
-        event.preventDefault();
-        let selectInputs = this.querySelectorAll('select');
-
-
-        let i = 0;
-        selectInputs.forEach(function (selectInput) {
-            let selectedValue = parseInt(selectInput.value);
-            playerAdd[i] = selectedValue;
-
-            i++;
-        });
-
-        if (playerScore.length < playerAdd.length) {
-            for (let i = 0; i < playerAdd.length; i++) {
-                playerScore[i] = 0;
-            }
-        }
-        for (let j = 0; j < playerAdd.length; j++) {
-            playerScore[j] += playerAdd[j];
-        }
-
-        for (let j = 0; j < playerScore.length; j++) {
-            console.log(playerScore[j]);
-
-            if (playerScore[j] >= 10) {
-                finalists.push("Player " + (j + 1) + " with " + playerScore[j] + " points!");
-            }
-        }
-
-        if (finalists.length > 1) {
-            let finalAnswer = document.getElementById("finalAnswer");
-            finalAnswer.textContent = finalists;
-        }
 
 
 
-
-    });
 
     dataGet();
 
@@ -470,3 +415,90 @@ document.getElementById("button").style.cursor = "pointer";
 
 
 
+
+
+document.querySelector('.totalCalc').addEventListener('submit', function (event) {
+    console.log("fired");
+
+    event.preventDefault();
+    let selectInputs = this.querySelectorAll('select');
+    console.log(selectInputs);
+
+    playerAdd = [];
+
+    let i = 0;
+    selectInputs.forEach(function (selectInput) {
+        let selectedValue = parseInt(selectInput.value);
+        playerAdd[i] = selectedValue;
+
+        i++;
+    });
+
+    if (playerScore.length < playerAdd.length) {
+        for (let i = 0; i < playerAdd.length; i++) {
+            playerScore[i] = 0;
+        }
+    }
+    for (let j = 0; j < playerAdd.length; j++) {
+        playerScore[j] += playerAdd[j];
+    }
+
+    for (let j = 0; j < playerScore.length; j++) {
+        console.log(playerScore[j]);
+
+        if (playerScore[j] >= 10) {
+            finalists.push("Player " + (j + 1) + " with " + playerScore[j] + " points!");
+        }
+    }
+
+    if (finalists.length > 1) {
+        let finalAnswer = document.getElementById("finalAnswer");
+        finalAnswer.textContent = finalists;
+    }
+
+
+
+
+});
+
+
+document.querySelector('.groupCalc').addEventListener('submit', function (event) {
+    event.preventDefault();
+    let selectInputs = this.querySelectorAll('select');
+    let totalPoints = 0;
+    let totalTimes = 0;
+    let finalAnswer = "";
+
+    selectInputs.forEach(function (selectInput) {
+        let selectedValue = parseInt(selectInput.value);
+        totalPoints += selectedValue;
+        totalTimes += 1;
+    });
+
+    totalPoints = totalPoints / totalTimes;
+    totalPoints = Math.round(totalPoints);
+
+    switch (totalPoints) {
+        case -2:
+            finalAnswer = "NO SHOT";
+            break;
+        case -1:
+            finalAnswer = "I don’t think so";
+            break;
+        case 0:
+            finalAnswer = "I need more facts";
+            break;
+        case 1:
+            finalAnswer = "I can see it";
+            break;
+        case 2:
+            finalAnswer = "KNEW IT";
+            break;
+        default:
+            finalAnswer = "";
+    }
+
+    let groupAnswer = document.getElementById("groupAnswer");
+    groupAnswer.textContent = finalAnswer;
+
+});

@@ -9,9 +9,6 @@
 
 <body>
     <h1>Bowl Of Bagels: A Conspiracy Game</h1>
-    <label for="slider">Player Count: </label>
-
-    <input type="range" min="3" max="10" value="3" id="slider">
 
     <div class="spinner">
         <div class="choice">Events</div>
@@ -33,23 +30,33 @@
 
 
     <div class="gridArea">
-        <div class="players">
-        </div>
-        <div>
+        <fieldset>
+            <legend> Players </legend>
+            <label for="slider">Player Count: </label>
+
+            <input type="range" min="3" max="10" value="3" id="slider">
+
+            <div class="players">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend> Voting </legend>
             <form class="groupCalc">
+
                 <input type="submit" id="general">
 
             </form>
             <span id="groupAnswer">_____</span>
-        </div>
-        <div>
+
+        </fieldset>
+        <fieldset>
+            <legend> Final Score </legend>
             <form class="totalCalc">
                 <input type="submit" id="totalPoints">
 
             </form>
             <span id="finalAnswer">_____</span>
-        </div>
-    </div>
+        </fieldset>
 
 </body>
 <script src="scripts/logic.js"></script>
